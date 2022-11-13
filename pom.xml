@@ -49,6 +49,17 @@
 			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>local</id>
+		</profile>
+		<profile>
+			<id>desarrollo</id>
+		</profile>
+		<profile>
+			<id>produccion</id>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
