@@ -21,8 +21,8 @@ public class MoviesServicesTest {
         assertTrue(moviesServices.otraPrueba());
     }
 
-    @Test
-    public void conUnObjeto(){
-        assertThat("varias pelis", CoreMatchers.is(moviesServices.moviesCategories()));
-    }
+    //@Test
+    //public void conUnObjeto(){
+      //  assertThat("varias pelis", CoreMatchers.is(moviesServices.moviesCategories()));
+   // }
 }

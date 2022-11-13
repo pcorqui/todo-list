@@ -27,7 +27,7 @@ class TodoListApplicationTests {
 	@Test
 	void estaOtraMadreNoFunciona(){
 		boolean noEsVerdad = moviesServices.otraPrueba();
-		assertFalse(noEsVerdad);
+		assertTrue(noEsVerdad);
 	}
 
 }
