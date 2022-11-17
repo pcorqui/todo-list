@@ -16,8 +16,8 @@ public class TaskController {
     @Autowired
     SaldoRespository saldoRespository;
 
-    @GetMapping("/all")
-    public List<Task> getAll(){
-        return (List<Task>) saldoRespository.findAll();
-    }
+    //@GetMapping("/all")
+    //public List<Task> getAll(){
+      //  return (List<Task>) saldoRespository.findAll();
+    //}
 }
