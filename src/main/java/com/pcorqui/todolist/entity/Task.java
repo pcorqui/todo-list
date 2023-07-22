@@ -12,15 +12,36 @@ public class Task {
     @Column(name = "id")
     private Integer id;
 
-    @Column
+    @Column(name = "nombre")
     private String name;
+
+    @Column
+    private String descripcion;
 
     @Column
     private Date fecha_creacion;
 
-    @Column
+    @Column(name = "ejecutada")
     private boolean realizada;
 
+    @Column
+    private Date fecha_actualizacion;
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Date getFecha_actualizacion() {
+        return fecha_actualizacion;
+    }
+
+    public void setFecha_actualizacion(Date fecha_actualizacion) {
+        this.fecha_actualizacion = fecha_actualizacion;
+    }
 
     public Integer getId() {
         return id;

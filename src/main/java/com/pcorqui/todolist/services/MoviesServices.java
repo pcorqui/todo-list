@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 public class MoviesServices {
 
     public String moviesCategories(){
-
         return "varias peliculas";
     }
 
