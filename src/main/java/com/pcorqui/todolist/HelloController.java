@@ -4,6 +4,7 @@ package com.pcorqui.todolist;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,6 +35,11 @@ public class HelloController {
             System.out.println("algo salio mal");
         }
         return "hola perro";
+    }
+
+    @PostMapping("csrf")
+    public String csrf(){
+        return "prueba csrf";
     }
 
     public static Integer plazo(Date dateNow, Date datePrestamo){
