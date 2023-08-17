@@ -1,6 +1,6 @@
 package com.pcorqui.todolist.entity;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 
 
@@ -70,6 +70,8 @@ public class Course {
         this.rating = rating;
         this.description = description;
     }
+
+    public Course(){}
 
     @Override
     public String toString() {
